@@ -17,6 +17,12 @@ This is a sample project which demonstrates the concept of OAuth workflow
 ./runResourceServer.bash  --resource server
 ```
 
+## BUILD SERVER
+```sh
+./build-auth-server.bash
+./build-resource-server.bash
+```
+
 The request body of login api in the authServer should contain the scope **LIBRARY**
 The resource server api's expect to include the claim **LIBRARY** in the auth header
 
