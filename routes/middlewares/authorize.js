@@ -15,7 +15,11 @@ oauthAuthorize = async (req, res, next) => {
         }
         try {
             const decoded = await jwt.verify(authHeader, 'jiodsh7ftds7tf78sdg87cfss8dhfsdg8fgsd8gf8')
-            next()
+            if (decoded.scopes.includes(process.env.SCOPE)) {
+                next()
+            }else{
+                return utils.responseHandler.writeResponseMessage(res, 401, 'unauthorized', 'you are unauthorized to access this resource')
+            }
         } catch (err) {
             utils.logger.error('Error decoding jwt token: ', err)
             return utils.responseHandler.writeResponseMessage(res, 500, 'internal server error')

@@ -16,6 +16,6 @@ process.json
 logs/*
 
 .idea/*
-/node_modules/*
-/public/media/*
-/dist/*
+node_modules/
+public/media/*
+dist/*
