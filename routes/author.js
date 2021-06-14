@@ -5,9 +5,10 @@
  */
 const express = require('express'),
     router = express.Router(),
-    controllers = require('../controllers');
+    controllers = require('../controllers'),
+    authHelper = require('./middlewares/authorize');
 
-router.get('/all', controllers.authorController.getAllAuthors)
+router.get('/all',authHelper.oauthAuthorize, controllers.authorController.getAllAuthors)
 
 
 module.exports = router;

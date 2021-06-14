@@ -57,3 +57,8 @@
 {"message":"::1 - - [14/Jun/2021:18:14:48 +0000] \"POST /api/user/login HTTP/1.1\" 200 82 \"-\" \"PostmanRuntime/7.26.8\"\n","level":"info"}
 {"message":"::1 - - [14/Jun/2021:18:15:00 +0000] \"POST /api/user/login HTTP/1.1\" 200 82 \"-\" \"PostmanRuntime/7.26.8\"\n","level":"info"}
 {"message":"::1 - - [14/Jun/2021:18:15:04 +0000] \"POST /api/user/login HTTP/1.1\" 200 245 \"-\" \"PostmanRuntime/7.26.8\"\n","level":"info"}
+{"message":"::1 - - [14/Jun/2021:18:16:29 +0000] \"GET /api/author/all HTTP/1.1\" 401 93 \"-\" \"PostmanRuntime/7.26.8\"\n","level":"info"}
+{"message":"::1 - - [14/Jun/2021:18:16:50 +0000] \"GET /api/author/all HTTP/1.1\" 401 93 \"-\" \"PostmanRuntime/7.26.8\"\n","level":"info"}
+{"message":"::1 - - [14/Jun/2021:18:16:51 +0000] \"GET /api/author/all HTTP/1.1\" 401 93 \"-\" \"PostmanRuntime/7.26.8\"\n","level":"info"}
+{"message":"::1 - - [14/Jun/2021:18:17:09 +0000] \"POST /api/user/login HTTP/1.1\" 200 259 \"-\" \"PostmanRuntime/7.26.8\"\n","level":"info"}
+{"message":"::1 - - [14/Jun/2021:18:17:20 +0000] \"GET /api/author/all HTTP/1.1\" 200 231 \"-\" \"PostmanRuntime/7.26.8\"\n","level":"info"}

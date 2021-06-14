@@ -10,8 +10,6 @@ login = async (req, res) => {
     try {
         const username = req.body.username,
             scopes = req.body.scopes;
-        console.log(username)
-        console.log(scopes)
         if(!username || !scopes){
             return utils.responseHandler.writeResponseMessage(res,200,'ok',{success:false,message:'invalid request'})
         }
